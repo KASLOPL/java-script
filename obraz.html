@@ -8,7 +8,7 @@ window.close()
 </script>
 </head>
 <body>
-<textarea name="nazwa" cols="70" rows="34" readonly>a)Uwagi na temat JS
+<textarea name="nazwa" cols="150" rows="41" readonly>a)Uwagi na temat JS
 -kiedy powstała:
 JS powstał w 1995
 -dlaczego jest to język skryptowy
@@ -31,6 +31,24 @@ Mówiąc inaczej, jeśli język pozwala jakoś pozyskać referencję do struktur
 wywołać metodę która przyjmuje obiekt struktury jako swój argument, to już możemy mówić o języku 
 obiektowym i stosować do takiego języka całą wiedzę o tzw. wzorcach projektowych.
 
+---------------------------------------------------------------------------------------------------------
+
+- <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"> 
+To polecenie tworzy przycisk po którego kliknieciu wywoływana jest funkcja o nazwie "WinOpen".
+
+- window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); 
+Jest to polecenie które otwiera nowe okno przeglądarki oraz określa wszyskie parametry tego okna.
+
+-toolbar=no -> ukrywa standardowy pasek narzędzi
+-directories=no, -> ukrywa przyciski katalogów
+-menubar=no, -> ukrywa menu przeglądarki
+-height=280, -> ustawia wysokość okna na 280px
+-width=160, -> ustawia szerokość okna na 160px
+-top=200, -> ustawia położenie okna względem góry ekranu na 200px
+-left=200, -> ustawia położenie okna względem lewej strony ekranu na 200px
+
+- window.close()
+Jest to polecenie które zamyka dane okno.
 </textarea>
 <img src="obraz1.gif" />
 <input type="button" value="zamknij okno" onclick="okno_zamknij_bojko()"/>
