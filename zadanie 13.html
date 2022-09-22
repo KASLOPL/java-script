@@ -1,0 +1,41 @@
+<html>
+<body>
+<div style="color:blue;font-size:40px;">
+<script language="JavaScript">
+
+
+
+var a_boj=prompt("a_boj=","");
+var b_boj=prompt("b_boj=","");
+
+
+
+var a=parseFloat(a_boj);
+var b=parseFloat(b_boj);
+var x1, x2, x3, x4, wynik;
+
+
+
+x1=Math.pow(a,3);
+x2=3*Math.pow(a,2)*b;
+x3=3*a*Math.pow(b,2);
+x4=Math.pow(b,3);
+wynik=x1+x2+x3+x4;
+
+/*(1 + 2)^3= 
+1^3 + 
+3*((1)^2)*(2) + 
+3*(1)*((2)^2) + 
+2^3 
+= 1 + 6 + 12 + 8 = 27
+*/
+
+document.write("A="+a+"B="+b+"<br>");
+document.write("("+a+" + "+b+")^3= "+a+"^3 + 3*(("+a+")^2)*("+b+") + 3*("+a+")*(("+b+")^2) + "+b+"^3 = "+x1+" + "+x2+" + "+x3+" + "+x4+" = "+wynik+"<br>");
+
+
+
+</script>
+</div>
+</body>
+</html>
