@@ -1,0 +1,29 @@
+<textarea name="nazwa" cols="1000" rows="100" readonly>
+<html>
+ <head>
+ <script type="text/javascript">
+ function samochod(nazwisko_k,imie_k,zawod_k)//początek konstruktora
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+}//koniec konstruktora
+ samochod.prototype.wypisz_bojko = function () //definicja metody
+ {
+ alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+ };
+var osoba1 = new samochod("Kowalski", "Jan", "kierowca"); // nowy obiekt osoba1
+var osoba2 = new samochod('Nowak', 'Anna', 'sekretarka');
+osoba1.wypisz_bojko(); // uruchomienie metody wypisz() dotyczącej osoby 1
+osoba2.wypisz_bojko();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
+</textarea>
