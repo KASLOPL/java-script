@@ -1,0 +1,33 @@
+<html>
+<head>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+
+function x2()
+{
+ var x=prompt("podaj x","");
+ var l;
+ l=x.toLowerCase();
+
+if(x==1 || l=="czerwony")
+{
+	document.write("<font color=red size=7>wczytałeś kolor czerwoy</font>"+"<br>");
+}
+if(x==2 || l=="niebieski")
+{
+	document.write("<font color=blue size=1>wczytałeś kolor niebieski</font>"+"<br>");
+}
+}
+
+
+
+</script>
+</head>
+</div>
+</body>
+<font color=green size=7>Menu</font><br>
+<font color=red size=7>1-czerwony</font><br>
+<font color=blue size=7>2-niebieski</font><br><br>
+
+<input type="button" value="sprawdź" onclick="x2()"/>
+</html>

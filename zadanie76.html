@@ -1,0 +1,31 @@
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<script language="JavaScript">
+
+var po=1, wynik1=0, wynik2=0;
+
+do{
+
+for(var i=0; i<=2; i++)
+{
+wynik1=Math.sqrt(po);
+wynik2=Math.sqrt(wynik1);
+document.write("I="+po+"&nbsp&nbsp&nbsp&nbsp&nbsppierwiastek2("+po+")="+wynik1.toFixed(2)+"&nbsp&nbsp&nbsp&nbsp&nbsppierwiastek4("+po+")="+wynik2.toFixed(2)+"<br>");
+po++;
+}
+}while(confirm("Kontynuować ?") && po<=15)
+
+if(confirm("Kontynuować ?"))
+{
+wynik1=Math.sqrt(po);
+wynik2=Math.sqrt(wynik1);
+	document.write("I="+po+"&nbsp&nbsp&nbsp&nbsp&nbsppierwiastek2("+po+")="+wynik1.toFixed(2)+"&nbsp&nbsp&nbsp&nbsp&nbsppierwiastek4("+po+")="+wynik2.toFixed(2)+"<br>");
+}
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
